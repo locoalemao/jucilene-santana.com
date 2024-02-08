@@ -1,0 +1,67 @@
+/*============ SIDEBAR TOGGLE ============*/
+document.addEventListener('DOMContentLoaded', function () {
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+
+  function toggleSidebar() {
+      sidebar.classList.toggle('active');
+  }
+  function hideSidebar() {
+      sidebar.classList.remove('active');
+  }
+  function handleResize() {
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth >= 590) {
+          sidebar.classList.add('active');
+      } else {
+          hideSidebar();
+      }
+  }
+  function handleScroll() {
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth < 590) {
+          hideSidebar();
+      }
+  }
+  sidebarToggle.addEventListener('click', toggleSidebar);
+  window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleResize);
+});
+
+
+
+
+
+// Function to load the header, sidebar, and footer templates
+function loadTemplate() {
+    // Load header
+    const headerContainer = document.getElementById('header');
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            headerContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header template:', error));
+
+    // Load sidebar
+    const sidebarContainer = document.getElementById('sidebar');
+    fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            sidebarContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar template:', error));
+
+    // Load footer
+    const footerContainer = document.getElementById('footer');
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            footerContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer template:', error));
+}
+
+// Call the function to load the templates after the DOM content has loaded
+document.addEventListener('DOMContentLoaded', loadTemplate);
