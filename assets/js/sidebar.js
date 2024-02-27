@@ -1,20 +1,10 @@
-// Load sidebar template
-const sidebarContainer = document.getElementById('sidebar');
-fetch('sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-        sidebarContainer.innerHTML = data;
-        // Call the function to initialize toggle functionality after sidebar content is loaded
-        initializeSidebarToggle();
-    })
-    .catch(error => console.error('Error loading sidebar template:', error));
-
 // Function to initialize sidebar toggle functionality
 function initializeSidebarToggle() {
     const sidebar = document.getElementById('sidebar');
     const sidebarToggle = document.getElementById('sidebar-toggle');
 
     function toggleSidebar() {
+        console.log("Toggle sidebar function called.");
         sidebar.classList.toggle('active');
     }
 
@@ -24,16 +14,10 @@ function initializeSidebarToggle() {
 
     function handleResize() {
         const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        const isActive = sidebar.classList.contains('active');
-    
         if (viewportWidth >= 590) {
-            if (!isActive) {
-                sidebar.classList.add('active');
-            }
+            sidebar.classList.add('active');
         } else {
-            if (isActive) {
-                sidebar.classList.remove('active');
-            }
+            hideSidebar();
         }
     }
 
@@ -49,4 +33,18 @@ function initializeSidebarToggle() {
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('load', handleResize);
+
+    // Set the initial state of the sidebar
+    handleResize();
 }
+
+// Load sidebar template
+const sidebarContainer = document.getElementById('sidebar');
+fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+        sidebarContainer.innerHTML = data;
+        initializeSidebarToggle(); // Re-initialize the sidebar toggle functionality after the content is loaded
+    })
+    .catch(error => console.error('Error loading sidebar template:', error));
+
