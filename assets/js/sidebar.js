@@ -1,50 +1,46 @@
-// Function to initialize sidebar toggle functionality
-function initializeSidebarToggle() {
-    const sidebar = document.getElementById('sidebar');
+document.addEventListener('DOMContentLoaded', function() {
     const sidebarToggle = document.getElementById('sidebar-toggle');
 
-    function toggleSidebar() {
-        console.log("Toggle sidebar function called.");
-        sidebar.classList.toggle('active');
-    }
+    // Load the sidebar content from sidebar.html
+    fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('sidebar-cont').innerHTML = data;
+            // Now that the sidebar is loaded, we can correctly toggle the 'active' class
+            sidebarToggle.addEventListener('click', function() {
+                const sidebar = document.querySelector('.sidebar'); // Ensure this selector matches your sidebar's class
+                sidebar.classList.toggle('active');
+                // Also toggle a class on the sidebar-toggle button
+                sidebarToggle.classList.toggle('toggle-active'); // Use a different class name to avoid conflicts
+            });
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
 
-    function hideSidebar() {
-        sidebar.classList.remove('active');
-    }
-
-    function handleResize() {
-        const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (viewportWidth >= 590) {
+    // Function to handle the sidebar visibility based on window width
+    function handleWindowResize() {
+        const sidebar = document.querySelector('.sidebar'); // Ensure this selector matches your sidebar's class
+        if (window.innerWidth >= 590) {
             sidebar.classList.add('active');
+            sidebarToggle.style.display = 'none';
         } else {
-            hideSidebar();
+            sidebar.classList.remove('active');
+            sidebarToggle.style.display = 'block';
         }
     }
 
-    function handleScroll() {
-        const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (viewportWidth < 590) {
-            hideSidebar();
+    // Function to hide the sidebar when scrolling on small screens
+    function handleWindowScroll() {
+        const sidebar = document.querySelector('.sidebar'); // Ensure this selector matches your sidebar's class
+        if (window.innerWidth < 590) {
+            sidebar.classList.remove('active');
+            sidebarToggle.classList.remove('toggle-active'); // Ensure the toggle button moves back with the sidebar
         }
     }
 
-    // Attach event listeners
-    sidebarToggle.addEventListener('click', toggleSidebar);
-    window.addEventListener('resize', handleResize);
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('load', handleResize);
+    // Attach resize and scroll event listeners
+    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener('scroll', handleWindowScroll);
 
-    // Set the initial state of the sidebar
-    handleResize();
-}
-
-// Load sidebar template
-const sidebarContainer = document.getElementById('sidebar');
-fetch('sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-        sidebarContainer.innerHTML = data;
-        initializeSidebarToggle(); // Re-initialize the sidebar toggle functionality after the content is loaded
-    })
-    .catch(error => console.error('Error loading sidebar template:', error));
-
+    // Initial call to set the correct sidebar state
+    handleWindowResize();
+});

@@ -34,6 +34,16 @@
 }
 
 @media screen and (max-width: 590px){  
+  .sidebar {
+    transform: translateX(-100%); /* Adjust this value to match the width of your sidebar */
+  }
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  .sidebar.active + .sidebar-toggle {
+    left: 5.5rem;; /* Reset to 0 when the sidebar is not active */
+    display: block;
+  }
   body{
     padding: 3rem 0 0 0;
   }
