@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt"
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="pt">
+  </html>
     <meta name="description" content="Saiba como Delícia Santana! 
     usa suas informações pessoais e garante sua privacidade. 
     Esta página mostra políticas relativas à coleta, uso e proteção de dados.">
 
-    <!--================ ICON BROWSER TAB ================-->
+    <title>Política de Privacidade | Delícia Santana!</title>
+
+    <!-- #region COMMON RESOURCES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--================ TAB ICON ================-->
     <link rel="icon" href="assets/icons/coração-32.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/icons/coração-32.png" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/coração-32.png">
@@ -18,97 +21,27 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/breakpoints.css">
     <link rel="stylesheet" href="assets/css/variable.css">
-    <link rel="stylesheet" href="assets/css/sidebar.css">    
+    <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
    
     <!--================ FONTS ================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&
     family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&family=Vidaloka&display=swap" rel="stylesheet">
-
-    <title>Política de Privacidade | Delícia Santana!</title>
+    <!-- #endregion -->    
   </head>
   <body>
     <!--================ HEADER ================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <div class="nav__social">
-          <a href="https://www.youtube.com/@jucilene.santana"
-            target="_blank" class="nav__social-link">                
-            <img src="assets/icons/icons8-youtube-30.png" alt="Logotipo do YouTube" style="width: 24px; height: 24px;">
-          </a>
-        </div>
-        <a href="index.html" class="nav__logo">
-          Delícia <span>Santana!</span>
-        </a>
-
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Procurar...">
-          <button class="search-button">
-            <img src="assets/icons/procurar-24.png" alt="Logotipo de pesquisa" style="width: 18px; height: 18px;">
-          </button>
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__header">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Início</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contato</a>
-            </li>
-          </ul>
-      </nav>
-    </header>
+    <div id="header"></div>
 
     <!--================ SIDEBAR ================-->    
-    <nav class="sidebar" id="sidebar">
-      <button class="sidebar-toggle" id="sidebar-toggle">
-        <img src="assets/icons/f-menu-24.png" alt="menu da barra lateral">
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/carne-48.png" alt="ícone de carne">
-        <div>Carne</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/peixe-48.png" alt="ícone de peixe">
-        <div>Peixe</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/massas-48.png" alt="ícone de massas">
-        <div>Massas</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/lanches-48.png" alt="ícone de lanches">
-        <div>Lanches</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/sopa-48.png" alt="ícone de sopa">
-        <div>Sopa</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/pão-48.png" alt="ícone de pão">
-        <div>Pão</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/doces-48.png" alt="ícone de doces">
-        <div>Doces</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/sem-glúten-48.png" alt="ícone sem glúten">
-        <div>Celíacos</div>
-      </button>
-      <button class="sidebar-button">
-        <img src="assets/icons/vegano-48.png" alt="ícone vegano">
-        <div>Vegano</div>
-      </button>
-    </nav>
+    <div id="sidebar-cont"></div>
+    
+    <button class="sidebar-toggle" id="sidebar-toggle">
+      <img src="assets/icons/f-menu-24.png" alt="menu da barra lateral">
+    </button>
 
     <!--================ MAIN ================-->
     <main class="main">
@@ -205,26 +138,7 @@
       </section>
 
     <!--================ FOOTER ================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <div class="footer__social">
-          <a href="https://www.youtube.com/@jucilene.santana" target="_blank" class="footer__social-link">
-            <img src="assets/icons/Logo-3D-YouTube-94.png" alt="Logotipo 3D do YouTube" class="footer__youtube">
-          </a>
-        </div>
-
-        <div class="footer__copy-group">
-          <span class="footer__copy">
-            Derechos de autor &#169; 2023 Todos os direitos reservados |
-            <a target="_blank" href="privacy_policy.html">Política de Privacidade</a>
-          </span>
-    
-          <span class="footer__copy">
-            Todos os ícones por <a target="_blank" href="https://icons8.com">Icons8</a>
-          </span>
-        </div>
-      </div>      
-    </footer>
+    <div id="footer"></div>
 
     <!--================ SCROLL UP ================-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -233,5 +147,7 @@
 
     <!--================ MAIN JS ================-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/template.js"></script>
+    <script src="assets/js/sidebar.js"></script>
   </body>
 </html>

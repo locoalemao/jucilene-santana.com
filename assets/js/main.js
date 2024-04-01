@@ -51,27 +51,25 @@ const scrollUp = () => {
   scrollToTop();
 
 /*============ SCROLL SECTIONS ACTIVE LINK ============*/
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A' && e.target.hash) {
+      e.preventDefault();
+      const targetId = e.target.hash;
+      const targetElement = document.querySelector(targetId);
 
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        const offset = 2 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+      if (targetElement) {
+        const headerOffset = 50; // desired offset
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
-            top: targetElement.offsetTop - offset,
-            behavior: 'smooth'
+          top: offsetPosition,
+          behavior: 'smooth'
         });
-
-        // Remove active class from all links
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.classList.remove('active-link');
-        });
-
-        // Add active class to clicked link
-        this.classList.add('active-link');
-    });
+      }
+    }
+  });
 });
 
 /*============ CARD HOVER ============*/
