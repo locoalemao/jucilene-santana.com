@@ -210,27 +210,21 @@ img{
   display: flex;
 }
 
-.recipe__container{
-  display: flex;
-  grid-template-columns: repeat(auto-fit,
-  minmax(20rem, 1fr));
-  justify-items: center;
-  align-items: flex-start;
-  max-width: 1300px;
-  position: relative;  
+.recipe__vid {
+  padding: 4rem 4rem 2rem 4rem;
+  align-items: center;
 }
 
-.recipe__img img {
-  border-radius: 4%;
-  display: block;
-  width: 100%;
-  filter: brightness(115%);
-  margin: 4rem 0 4rem 0;
+.recipe__vid iframe {
+  border-radius: 1rem;
 }
 
-.recipe__content{
-  flex: 1;
-  margin-right: 2rem;
+.recipe__data{
+  padding: 0 4rem 2rem 4rem;
+}
+
+.recipe__description{
+  margin-block: 1rem 1.5rem;
 }
 
 /*============ FAV RECIPES ============*/
