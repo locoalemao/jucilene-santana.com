@@ -12,7 +12,8 @@
   .search-input {
     width: 7rem;
   }
-  .profile__img {
+  .profile__img,
+  .recipe__img {
     max-width: 110%;
   }
   .home__container{
@@ -93,7 +94,8 @@
 }
 
 @media screen and (max-width: 687px){
-  .profile__img {
+  .profile__img,
+  .recipe__img {
     transform: scale(0.6);
     margin-top: -1rem;
   }

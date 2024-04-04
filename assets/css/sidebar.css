@@ -17,7 +17,7 @@
 }
 
 .sidebar-toggle {
-  z-index: 2;
+  z-index: 80;
   position: fixed;
   top: 3rem;
   left: 0; /* Start at the left edge of the viewport */
