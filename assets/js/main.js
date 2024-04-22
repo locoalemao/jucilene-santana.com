@@ -1,31 +1,33 @@
-/*============ EMAIL JS ============*/
-const contactForm = document.getElementById('contact-form')
-    contactMessage = document.getElementById('contact-message')
+/*============ EMAIL JS (Only for index.html) ============*/
+if (window.location.pathname === '/index.html') {
+  const contactForm = document.getElementById('contact-form');
+  const contactMessage = document.getElementById('contact-message');
 
-const sendEmail = (e) =>{
-    e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
     // serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_4tt96nn', 'template_w2ss0xk', '#contact-form', 'x0ZoDPnFTryopFqGH')
-        .then(() =>{
-            // Show sent message
-            contactMessage.textContent = 'Mensagem enviada com sucesso ✔️'
+      .then(() => {
+        // Show sent message
+        contactMessage.textContent = 'Mensagem enviada com sucesso ✔️';
 
-            // Remove message after five seconds
-            setTimeout(() =>{
-                contactMessage.textContent = ''
-            }, 5000)
+        // Remove message after five seconds
+        setTimeout(() => {
+          contactMessage.textContent = '';
+        }, 5000);
 
-            // Clear input fields
-            contactForm.reset()
+        // Clear input fields
+        contactForm.reset();
+      })
+      .catch(() => {
+        // Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌';
+      });
+  };
 
-        }, () =>{
-            //Show error message
-            contactMessage.textContent = 'Message not sent (service error) ❌'
-        })
+  contactForm.addEventListener('submit', sendEmail);
 }
-
-contactForm.addEventListener('submit', sendEmail)
 
 /*============ SHOW SCROLL UP ============*/
 const scrollUp = () => {
