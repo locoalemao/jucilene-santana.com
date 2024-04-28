@@ -4,10 +4,10 @@ function loadTemplate() {
   
     // Load header based on location
     const headerContainer = document.getElementById('header');
-    let headerPath = 'header.html';  // Default path (assuming in same folder)
+    let headerPath = 'header.html';
     
-    if (currentPage === 'recipes') {  // Adjust condition based on your folder name
-      headerPath = '../../main/header.html';  // Path for recipe pages
+    if (currentPage === 'recipes') {
+      headerPath = '../../main/header.html';
     }
   
     fetch(headerPath)
@@ -19,10 +19,10 @@ function loadTemplate() {
   
     // Load footer (adjust path based on location)
     const footerContainer = document.getElementById('footer');
-    let footerPath = 'footer.html';  // Default path (assuming in same folder)
+    let footerPath = 'footer.html';
   
-    if (currentPage === 'recipes') {  // Adjust condition for recipe pages
-      footerPath = '../../main/footer.html';  // Path for recipe pages in main folder
+    if (currentPage === 'recipes') {
+      footerPath = '../../main/footer.html';
     }
   
     fetch(footerPath)
@@ -34,8 +34,8 @@ function loadTemplate() {
   
     // Optional: Load sidebar if applicable (adjust path if needed)
     const sidebarContainer = document.getElementById('sidebar-cont');
-    if (currentPage === 'recipes') {  // Optional: Load sidebar only on recipe pages
-      fetch('../../main/sidebar.html')  // Adjust path based on your location
+    if (currentPage === 'recipes') {
+      fetch('../../main/sidebar.html')
         .then(response => response.text())
         .then(data => {
           sidebarContainer.innerHTML = data;
