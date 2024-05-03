@@ -3,7 +3,7 @@
   --hue: 85;
   --first-color: hsl(var(--hue), 70%, 85%); /* 	#ddf4be */
   --first-color-alt: hsl(32, 27%, 28%); /* #5b4934 */
-  --title-color: hsl(29, 25%, 66%); /* #d2bfac */
+  --title-color: hsl(28, 18%, 41%); /* #d2bfac */
   --text-color: hsl(0, 0%, 20%); /* #333333 */
   --text-color-alt: hsl(0, 0%, 80%); /* 	#cccccc */
   --body-color: hsl(60, 100%, 95%); /* #ffffe5 */
@@ -14,7 +14,7 @@
   --bigger-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1.25rem;
+  --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaler-font-size: .75rem;
