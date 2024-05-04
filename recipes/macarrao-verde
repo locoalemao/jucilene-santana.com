@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <meta name="description" content="Pão de Sementes sem glúten - uma opção deliciosa que combina nutrição e sabor. 
-    A massa macia e cheia de sementes é finalizada com uma cobertura de sementes crocante, criando uma experiência de sabor 
-    única para todos os amantes de pães.">
+    <meta name="description" content="Macarrão com molho verde cremoso - uma escolha deliciosa que une tradição e sabor. 
+    Feito com ingredientes frescos e naturais, este macarrão tem uma cor vibrante e um sabor único. A massa verde 
+    é cuidadosamente preparada e cortada à mão, proporcionando uma experiência gastronômica autêntica e memorável 
+    para todos os amantes de massas. Experimente este prato clássico e desfrute de uma refeição verdadeiramente 
+    reconfortante e saborosa.">
 
-    <title>Pão de Sementes, simples e deliciosa | Jucilene Santana</title>
+    <title>Macarrão com molho verde, simples e deliciosa | Jucilene Santana</title>
 
     <!-- #region COMMON RESOURCES -->
     <meta charset="UTF-8">
@@ -48,58 +50,59 @@
       <!--================ HOME ================-->
       <section class="home section" id="home">
         <div class="recipe__vid">
-          <iframe width="70%" height="600rem" src="https://www.youtube.com/embed/jYKnazhx2TI"
+          <iframe width="70%" height="600rem" src="https://www.youtube.com/embed/OJY0hjQ0A7s"
            frameborder="0" allowfullscreen></iframe>
         </div>
       
         <div class="recipe__data">
-          <h1 class="home__title">Pão de Sementes (sem glúten)</h1>
+          <h1 class="home__title">Macarrão com molho verde</h1>
 
           <p class="et_pb_title_meta_container">
-            | <span class="published">28 maio 2024</span> | 
-            <a href="/category/fleisch-fisch/" rel="category tag">Pão</a> |
-            <a href="/category/japanische-klassiker/" rel="category tag">Celíacos</a> |            
+            | <span class="published">12 junho 2024</span> |
+            <a href="/category/fleisch-fisch/" rel="category tag">Massas</a> |
+            <a href="/category/japanische-klassiker/" rel="category tag">Vegano</a> |            
           </p>
     
           <p class="recipe__description">
             <h3>Ingredientes:</h3><br>
 
             <h3>
-                • 160g de sementes de girassol<br>
-                • 65 g de sementes de abóbora<br>
-                • 90 g de amêndoas<br>
-                • 120 g de sementes de linhaça <br>
-                • 235 g de aveia em floco<br>
-                • 25 g de sementes de chia<br>
-                • 12 g de sal <br>
-                • 20 g de casca psylliu<br>
+                • 500g de massa a sua escolha (usei massa de espelta)<br>
+                • 450g de ervilhas (Pode usar congeladas também)<br>
+                • 100g de espinafre<br>
+                • Suco de 1 limão<br>
+                • 250ml creme de leite vegano<br>
+                • 300ml de água de massa<br>
+                • 3 dentes de alho<br>
+                • 1 cebola vermelha<br>
+                • Manjericão fresco punhado<br>
+                • Sal<br>
+                • Pimenta<br>
             </h3>
           </p><br><br>
 
-          <p>Pré-aqueça o forno a 180°C (350°F). Em uma tigela grande, misture as sementes de girassol, 
-            sementes de abóbora, amêndoas, sementes de linhaça, aveia em flocos, sementes de chia, 
-            sal e casca de psyllium até que estejam bem combinados.
+          <p>Prepare-se para uma refeição deliciosamente cremosa e reconfortante com este Macarrão Verde Vegano. 
+            Com ingredientes frescos e saudáveis, este prato é uma explosão de sabor e nutrição. 
+            Comece cozinhando a massa de sua escolha conforme as instruções da embalagem.
           </p><br>
 
-          <p>Adicione 450 ml de água à mistura e mexa bem para incorporar os ingredientes. 
-            Deixe a massa descansar por cerca de 10 minutos para permitir que as sementes 
-            absorvam a água e a mistura engrosse um pouco.
+          <p>Enquanto isso, corte a cebola e o alho em pedaços grandes e refogue-os em uma frigideira aquecida 
+            com um fio de azeite até ficarem dourados e perfumados.
           </p><br>
 
-          <p>Forre uma forma de pão com papel manteiga ou unte levemente com óleo. 
-            Transfira a massa para a forma preparada e use as costas de uma colher para 
-            pressionar a massa firmemente na forma, alisando a parte superior.
+          <p>Em seguida, coloque todos os ingredientes, exceto o macarrão, no liquidificador e bata até obter 
+            um molho cremoso e homogêneo. Despeje o molho em uma panela grande e aqueça-o suavemente, 
+            temperando com sal e pimenta a gosto.
           </p><br>
 
-          <p>Asse no forno pré-aquecido por 50 a 60 minutos, ou até que o pão esteja dourado e firme ao toque. 
-            Deixe o pão esfriar completamente na forma antes de retirá-lo e cortá-lo em fatias.
+          <p>Assim que a massa estiver cozida, escorra-a e reserve cerca de 300ml da água do cozimento. 
+            Adicione essa água ao molho na panela para ajustar a consistência e dar mais sabor.
           </p><br>
 
-          <p>Transfira a massa para a forma preparada e alise a parte superior com uma espátula.
+          <p>Por fim, adicione o macarrão cozido ao molho na panela, misture bem e aqueça tudo junto por alguns minutos. 
+            Sirva o macarrão verde vegano em pratos individuais, finalizando com folhas de manjericão fresco e 
+            uma pitada de pimenta preta moída na hora. É uma explosão de sabor que vai encantar seu paladar!
           </p><br>
-
-          <p>Sirva o pão de sementes com sua cobertura favorita, como manteiga vegana, geleia ou abacate fatiado. Aproveite!           
-          </p><br><br>
 
           <h3>Bom apetite !</h3><br>
         </div>
