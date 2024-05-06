@@ -102,7 +102,8 @@ img{
 }
 
 .nav__logo:hover {
-  background-color: var(--title-color);
+  box-shadow: 0 8px 24px hsla(var(--hue), 10%, 10%, .25);
+  outline: 1rem;
 }
 
 .nav__logo span {
@@ -125,6 +126,10 @@ img{
 
 .nav__link:hover{
   color: var(--title-color);  
+}
+
+.nav__item:hover{
+  color: var(--body-color);  
 }
 
 /* Active link */
@@ -330,10 +335,10 @@ h3 .ingredient {
 /*============ BUTTON ============*/
 .button{
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--body-color-alt);
   padding: 1rem 1rem;
   border-radius: .5rem;
-  color: var(--first-color-alt);
+  color: var(--title-color);
   font-weight: var(--font-semi-bold);
   font-family: "Vidaloka", sans-serif;
   transition: box-shadow .3s, background-color 1s;
@@ -351,7 +356,7 @@ h3 .ingredient {
   justify-content: center;
   align-items: center;
   padding: 2rem 0 2rem 0;
-  background-color: var(--title-color);
+  background-color: var(--body-color-alt);
 }
 
 .about h3 {

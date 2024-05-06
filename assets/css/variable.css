@@ -7,7 +7,9 @@
   --text-color: hsl(0, 0%, 20%); /* #333333 */
   --text-color-alt: hsl(0, 0%, 80%); /* 	#cccccc */
   --body-color: hsl(60, 100%, 95%); /* #ffffe5 */
+  --body-color-alt: hsl(27, 40%, 80%); /* */
   --container-color: hsl(0, 0%, 100%); /* #ffffff */
+  
 
   --body-font: "League Spartan", sans-serif;
   --biggest-font-size: 2rem;

@@ -47,7 +47,7 @@
 }
 
 .sidebar-button:hover {
-  background-color: var(--title-color);
+  background-color: var(--body-color-alt);
 }
 
 .sidebar-button img {
