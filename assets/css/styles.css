@@ -335,19 +335,19 @@ h3 .ingredient {
 /*============ BUTTON ============*/
 .button{
   display: inline-block;
-  background-color: var(--body-color-alt);
+  background-color: var(--first-color-alt);
   padding: 1rem 1rem;
   border-radius: .5rem;
-  color: var(--title-color);
+  color: var(--body-color-alt);
   font-weight: var(--font-semi-bold);
   font-family: "Vidaloka", sans-serif;
   transition: box-shadow .3s, background-color 1s;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
-  color: var(--first-color);
-  box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+  background-color: hsl(0, 90%, 45%);
+  color: white;
+  box-shadow: 0 8px 24px hsla(var(--first-color), 100%, 40%, .25);
   outline: none;
 }
 /*============ ABOUT ============*/

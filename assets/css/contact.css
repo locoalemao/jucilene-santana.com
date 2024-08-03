@@ -31,6 +31,7 @@
 }
 .contact .button{
   justify-self: center;
+  color: var(--first-color);
   cursor: pointer;
   font-size: 1rem;
 }
