@@ -8,34 +8,34 @@
   text-align: center;
 }
 .contact__form,
-.contact__group{
+.contact__group {
   display: grid;
-  row-gap: 1rem;  
+  row-gap: 1rem;
 }
-.contact__form{
-  position: relative;  
+.contact__form {
+  position: relative;
 }
-.contact__input{
-  padding: .5rem .8rem;
-  border-radius: .2rem;
+.contact__input {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
   border: 2px solid var(--first-color-alt);
   background-color: var(--container-color);
   color: var(--text-color);
 }
-.contact__input::placeholder{
+.contact__input::placeholder {
   color: var(--text-color-alt);
 }
-.contact__form textarea{
+.contact__form textarea {
   height: 11rem;
   resize: none;
 }
-.contact .button{
+.contact .button {
   justify-self: center;
   color: var(--first-color);
   cursor: pointer;
   font-size: 1rem;
 }
-.contact__message{
+.contact__message {
   position: absolute;
   left: 1rem;
   bottom: 4.5rem;

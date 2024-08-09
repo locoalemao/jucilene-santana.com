@@ -1,22 +1,21 @@
-/*============ BASE ============*/
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-.html{
+.html {
   scroll-behavior: smooth;
 }
 
 input,
 textarea,
-body{
+body {
   font-family: var(--body-font);
   font-size: var(--h3-font-size);
 }
 
-body{
+body {
   background-color: var(--body-color);
   color: var(--text-color);
   margin: 0;
@@ -27,16 +26,18 @@ body{
 
 input,
 textarea,
-button{
-  outline: none;  
+button {
+  outline: none;
   border: none;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3 {
   color: var(--title-color);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -44,7 +45,7 @@ li {
   padding-left: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -52,17 +53,17 @@ a:link {
   color: hsl(86, 40%, 62%);
 }
 
-img{
+img {
   display: block;
 }
 /*============ REUSABLE CSS CLASSES ============*/
-.container{
+.container {
   max-width: 75rem;
   align-items: center;
   justify-content: center;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
@@ -71,22 +72,22 @@ img{
   font-family: "Vidaloka", sans-serif;
 }
 /*============ HEADER & NAV ============*/
-.header{
+.header {
   position: fixed;
   width: 100%;
   background-color: var(--first-color);
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  border-bottom: .1px solid var(--first-color-alt);
+  border-bottom: 0.1px solid var(--first-color-alt);
 }
 
-.nav{
+.nav {
   height: var(--header-height);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: .6rem;
+  margin-left: 0.6rem;
   margin-right: 1rem;
 }
 
@@ -98,11 +99,11 @@ img{
   padding: 0.3rem 0.3rem 0.3rem 0.3rem;
   margin-left: 2rem;
   border-radius: 0.2rem;
-  transition: box-shadow .6s, background-color .4s;
+  transition: box-shadow 0.6s, background-color 0.4s;
 }
 
 .nav__logo:hover {
-  box-shadow: 0 8px 24px hsla(var(--hue), 10%, 10%, .25);
+  box-shadow: 0 8px 24px hsla(var(--hue), 10%, 10%, 0.25);
   outline: 1rem;
 }
 
@@ -110,30 +111,29 @@ img{
   color: hsl(32, 27%, 45%);
 }
 
-.nav__header{
+.nav__header {
   display: flex;
   flex-direction: row;
   row-gap: 2rem;
   margin-left: 7rem;
 }
 
-.nav__link{
+.nav__link {
   color: hsl(32, 27%, 45%);
   font-weight: var(--font-semi-bold);
   font-size: var(--h3-font-size);
-  transition: color .4s;  
+  transition: color 0.4s;
 }
 
-.nav__link:hover{
-  color: var(--title-color);  
+.nav__link:hover {
+  color: var(--title-color);
 }
 
-.nav__item:hover{
-  color: var(--body-color);  
+.nav__item:hover {
+  color: var(--body-color);
 }
 
-/* Active link */
-.active-link{
+.active-link {
   color: var(--first-color-alt);
 }
 
@@ -142,22 +142,22 @@ img{
   margin-left: 1rem;
 }
 
-.nav__social-link{
+.nav__social-link {
   display: flex;
   background-color: var(--first-color-alt);
-  padding: .5rem;
+  padding: 0.5rem;
   color: var(--body-color);
   font-size: 1.4rem;
-  border-radius: .4rem;
-  transition: transform .3s, background-color .8s;
+  border-radius: 0.4rem;
+  transition: transform 0.3s, background-color 0.8s;
 }
 
-.nav__social-link:hover{
-  transform: translateX(.5rem);  
+.nav__social-link:hover {
+  transform: translateX(0.5rem);
   background-color: hsl(0, 90%, 45%);
 }
 
-.search-input {  
+.search-input {
   padding: 0.5rem;
   width: 12rem;
 }
@@ -176,76 +176,63 @@ img{
 }
 
 /*============ HOME ============*/
-.home{
+.home {
   background-color: var(--body-color);
-
 }
 
-.home__container{
+.home__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,
-  minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-items: center;
   align-items: center;
   max-width: 1300px;
-  position: relative;  
+  position: relative;
 }
 
-.home__content{
+.home__content {
   display: grid;
   row-gap: 2rem;
 }
 
-.home__data{
+.home__data {
   margin: 2rem 0 0 0;
   text-align: center;
 }
 
-.home__subtitle,
-.home__education{
+.home__subtitle {
   font-size: var(--bigger-font-size);
 }
 
 .home__subtitle span,
-.home__title{
+.home__title {
   color: var(--first-color-alt);
 }
 
-.home__title{
+.home__title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-semi-bold);
   font-family: "Vidaloka", sans-serif;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
-.home__description{
+.home__description {
   margin-block: 1rem 1.5rem;
   width: 20rem;
 }
 
-.home__social{
-  display: flex;
-  justify-content: center;
-  column-gap: 1.25rem;
-}
-
-.profile__img{
+.profile__img {
   border-radius: 50%;
   overflow: hidden;
-  transform: scale(.8);
+  transform: scale(0.8);
   filter: brightness(115%);
 }
 
 .profile__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   object-position: 90% 60%;
   transform: scale(1.07);
-}
-
-.nav-social {
-  display: flex;
 }
 
 .recipe__vid {
@@ -259,18 +246,18 @@ img{
   max-width: 70rem;
 }
 
-.recipe__data{
+.recipe__data {
   padding: 0 6rem 2rem 4rem;
 }
 
-.recipe__description{
+.recipe__description {
   margin-block: 1rem 1.5rem;
 }
 
 h3 .ingredient {
   display: inline-block;
-  text-indent: -15px; /* Adjust the value as needed */
-  margin-bottom: 5px; /* Adjust the value as needed */
+  text-indent: -15px;
+  margin-bottom: 5px;
 }
 
 /*============ FAV RECIPES ============*/
@@ -281,13 +268,13 @@ h3 .ingredient {
   width: 200px;
   height: 52.8px;
   background-color: var(--first-color);
-  padding: 0 .4rem 0 .4rem;
+  padding: 0 0.4rem 0 0.4rem;
   text-align: center;
   font-size: 1rem;
   color: var(--first-color-alt);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-  border-radius: 0 0 .2rem .2rem;
-  margin-top: -.1rem;
+  border-radius: 0 0 0.2rem 0.2rem;
+  margin-top: -0.1rem;
 }
 
 .video__grid {
@@ -304,13 +291,13 @@ h3 .ingredient {
   width: 200px;
 }
 
-.thumbnail{
+.thumbnail {
   width: 200px;
   height: 160px;
   object-fit: cover;
   object-position: left;
   align-items: center;
-  border-radius: .2rem .2rem 0 0;
+  border-radius: 0.2rem 0.2rem 0 0;
   box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
   filter: saturate(85%);
 }
@@ -321,33 +308,22 @@ h3 .ingredient {
   cursor: pointer;
 }
 
-.video-time {  
-  font-size: 12px;
-  font-weight: 500;
-  padding: 4px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 5px;
-}
-
 /*============ BUTTON ============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color-alt);
   padding: 1rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: var(--body-color-alt);
   font-weight: var(--font-semi-bold);
   font-family: "Vidaloka", sans-serif;
-  transition: box-shadow .3s, background-color 1s;
+  transition: box-shadow 0.3s, background-color 1s;
 }
 
 .button:hover {
   background-color: hsl(0, 90%, 45%);
   color: white;
-  box-shadow: 0 8px 24px hsla(var(--first-color), 100%, 40%, .25);
+  box-shadow: 0 8px 24px hsla(var(--first-color), 100%, 40%, 0.25);
   outline: none;
 }
 /*============ ABOUT ============*/
@@ -372,10 +348,10 @@ h3 .ingredient {
 
 .text img {
   max-width: 100%;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   border: 2px dashed var(--first-color-alt);
   filter: brightness(90%);
-  filter: blur(.4px);
+  filter: blur(0.4px);
 }
 
 .row {
@@ -405,36 +381,35 @@ h3 .ingredient {
   align-items: center;
 }
 
-.row .left-text .content{
+.row .left-text .content {
   padding-right: 2rem;
 }
 
-.row .right-text .content{
+.row .right-text .content {
   padding-left: 2rem;
 }
 
 /*============ SCROLL UP ============*/
-.scrollup{
+.scrollup {
   position: fixed;
   right: 1rem;
   bottom: -50%;
   background-color: var(--first-color-alt);
   padding: 6px;
   display: inline-flex;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   color: var(--body-color);
   font-size: 1.25rem;
-  box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+  box-shadow: 0 4px 12px hsla(228, 15%, 8%, 0.4);
   z-index: var(--z-tooltip);
-  transition: bottom .4s, transform .4s;
+  transition: bottom 0.4s, transform 0.4s;
 }
 
-.scrollup:hover{
-  transform: translateY(-.25rem);
+.scrollup:hover {
+  transform: translateY(-0.25rem);
 }
 
-/* Show Scroll Up */
-.show-scroll{
+.show-scroll {
   bottom: 3rem;
 }
 /*--================ PRIVACY POLICY ================*/
@@ -442,7 +417,7 @@ h3 .ingredient {
   justify-content: center;
   align-items: center;
   background-color: var(--body-color);
-  margin: 2rem 0 3rem 0
+  margin: 2rem 0 3rem 0;
 }
 
 .policy__section h1 {

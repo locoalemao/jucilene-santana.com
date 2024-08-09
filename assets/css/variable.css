@@ -1,4 +1,4 @@
-:root{
+:root {
   --header-height: 3.5rem;
   --hue: 85;
   --first-color: hsl(var(--hue), 70%, 85%); /* 	#ddf4be */
@@ -9,7 +9,6 @@
   --body-color: hsl(60, 100%, 95%); /* #ffffe5 */
   --body-color-alt: hsl(27, 40%, 80%); /* */
   --container-color: hsl(0, 0%, 100%); /* #ffffff */
-  
 
   --body-font: "League Spartan", sans-serif;
   --biggest-font-size: 2rem;
@@ -17,35 +16,35 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaler-font-size: .75rem;
-  
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaler-font-size: 0.75rem;
+
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-  
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
 /* Responsive typography */
-@media screen and (min-width: 1152px){
-  :root{
+@media screen and (min-width: 1152px) {
+  :root {
     --biggest-font-size: 3rem;
     --bigger-font-size: 2rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813;
   }
 }
 
 /*============ SCROLL BAR ============*/
 ::-webkit-scrollbar {
-  width: .9rem;
+  width: 0.9rem;
   background-color: hsl(var(--hue), 20%, 54%);
 }
 ::-webkit-scrollbar-thumb {
